@@ -11,7 +11,7 @@ public class GameOfLife {
 
 	public static void main(String[] args) {
 		//String fileName = args[0];
-		String fileName = "line.dat";
+		String fileName = args[0];
 		//// Uncomment the test that you want to execute, and re-compile.
 		//// (Run one test at a time).
 		test1(fileName);
@@ -66,8 +66,6 @@ public class GameOfLife {
 		In in = new In(fileName); // Constructs an In object for reading the input file
 		int rows = Integer.parseInt(in.readLine());
 		int cols = Integer.parseInt(in.readLine());
-		System.out.println(rows);
-		System.out.println(cols);
 		int[][] board = new int[rows + 2][cols + 2];
 		rows = 1;
 		cols = 1;
